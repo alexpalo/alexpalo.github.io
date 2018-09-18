@@ -51,70 +51,122 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Title bar
 -------------------------------------------------- */
 .topbar{
-    position:fixed;
-    width:100%;
-    overflow:hidden;
-    z-index:1;
-    top:0;
-    left:0;
-    height:50px;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-.padding-med{
-    padding: 8px 16px;
-}
-
-.padding-sml{
-    padding: 4px 8px;
-}
-
-.margin-med{
-    margin: 8px 16px;
+  position:fixed;
+  width:100%;
+  overflow:hidden;
+  z-index:1;
+  top:0;
+  left:0;
+  text-align:center;
+  height:40px;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .titlebar{
-    text-align:center;
-    letter-spacing:4px;
-    position:absolute;
-    width:100%;
-    top:50%;
-    transform:translate(0,-50%)
+  text-align:center;
+  letter-spacing:4px;
+  position:absolute;
+  width:100%;
+  top:25%;
+  transform:translate(0,-50%);
 }
 
-.underline{
-    position:relative;
-    color:black;
-    text-decoration:none;
+.titlebg{
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  background-color:transparent;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
 
-.underline:hover{
-    color:black
+
+
+
+.uline{
+  position:relative;
+  color:black;
+  text-decoration:none;
 }
 
-.underline:before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:2px;
-    bottom:-1px;
-    left:0;
-    background-color:black;
-    visibility:hidden;
-    -webkit-transform:scaleX(0);
-    transform:scaleX(0);
-    -webkit-transition:all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+.uline:hover{
+  color:black
 }
 
-.underline:hover:before{
-    visibility:visible;
-    -webkit-transform:scaleX(1);
-    transform:scaleX(1);
+.uline:before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:2px;
+  bottom:-3px;
+  left:0;
+  background-color:black;
+  visibility:hidden;
+  -webkit-transform:scaleX(0);
+  transform:scaleX(0);
+  -webkit-transition:all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform-origin:left;
+  transform-origin:left;
 }
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.uline:hover:before{
+  visibility:visible;
+  -webkit-transform:scaleX(1);
+  transform:scaleX(1);
+  -webkit-transform-origin:left;
+  transform-origin:left;
+}
+
+.dark:hover{
+  color:lightgray;
+  transition:color 0.3s;
+}
+
+.dark:hover ~ .titlebg{
+  background-color:rgb(46, 46, 46);
+  transition: all .3s ease-in-out 0s;
+}
+
+.dark:hover ~ .uline{
+  background-color:purple;
+  transition:color 0.3s;
+}
+
+
+
+.toggledisplay{
+  display:none
+}
+
+.toggledisplay:target{
+  display:block
+}
+
+
+
+.padding-med{
+  padding: 8px 16px;
+}
+
+.padding-sml{
+  padding: 4px 8px;
+}
+
+.margin-med{
+  margin: 8px 16px;
+}
+
+/* ----------- Photography --------------- */
+
+
+
+
+
+
+/* ----------- Grid ------------- */
 .container {
   position: relative;
   width: 100%;
