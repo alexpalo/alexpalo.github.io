@@ -48,6 +48,18 @@ h1,h2,h3,h4,h5,h6{
 
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
+.padding-sml{
+  padding: 4px 8px;
+}
+
+.padding-med{
+  padding: 8px 16px;
+}
+
+.margin-med{
+  margin: 8px 16px;
+}
+
 /* Title bar
 -------------------------------------------------- */
 .topbar{
@@ -120,6 +132,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   transform-origin:left;
 }
 
+
 .dark:hover{
   color:lightgray;
   transition:color 0.3s;
@@ -147,17 +160,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 
-.padding-med{
-  padding: 8px 16px;
-}
 
-.padding-sml{
-  padding: 4px 8px;
-}
-
-.margin-med{
-  margin: 8px 16px;
-}
 
 /* ----------- Photography --------------- */
 
