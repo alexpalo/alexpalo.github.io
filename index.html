@@ -13,11 +13,11 @@
     <a class="uline titlebar margin-med" href="#projects">Projects</a>
     <!--a class="uline titlebar dark margin-med" href="#photography">Photography</a-->
     <!--a class="uline titlebar margin-med" href="#personal">Personal</a-->
-    <div class="titlebg"></div>
+    <!--div class="titlebg"></div-->
 </div>
 
 <!--About Me Page-->
-<div class="container toggledisplay" style="top:100px" id="about">
+<div class="container toggledisplay" style="top:100px;position:center;" id="about">
     <div class="row">
         <div class="three columns">
             <img style="width:150px" src="images/Portrait.jpg">
@@ -43,51 +43,63 @@
 
 
 <!--Projects Page-->
-<div class="container toggledisplay" style="top:100px" id="projects">
+<div class="container toggledisplay" style="top:100px;text-align:center;position:center" id="projects">
 
     <!--Blink Module-->
     <div class="row">
         <input style="display:none" type="radio" id="radioblink" name="radio">
         <label for="radioblink" class="designradio">
-            <img style="width:150px" src="images/Blink_Sync_Module.png">
+            <img style="width:100%" src="images/Blink_Sync_Module.png">
         </label>
-        
+
         <div class="designcontent">
-            <div class="logobox">
-                <img src="images/blink_logo_immedia.png">
-                <img src="images/blink_logo_kickstarter.png">
-                <img src="images/blink_logo_amazon.png">
+            <div style="float:right">
+                <div class="logobox">
+                    <img src="images/blink_logo_immedia.png">
+                    <img src="images/blink_logo_kickstarter.png">
+                    <img src="images/blink_logo_amazon.png">
+                </div>
             </div>
+            
+            <div>
+                <div class="designheader" style="width:500px">
+                    <img style="width:100%" src="images/blink_sync_production.png">
+                    <span class="designtitle"><h1>Blink Project</h1></span>
+                </div>
 
-            <div class="caption" style="width:300px;top:250;float:right;display:block;clear:right">
-                <img style="width:300px" src="images/blink_sync_render.png">
-                Render of Sync Module Alpha Unit Prototype
-            </div>
+                <div class="caption" style="width:300px;top:250;float:right;display:block;clear:right">
+                    <img style="width:300px" src="images/blink_sync_render.png">
+                    Render of Sync Module Alpha Unit Prototype
+                </div>
 
-            <h1>Blink Project</h1>
+                <p>In 2014 Immedia Semiconductor successfully ran a Kickstarter campaign for their proprietary low-powered smart security cameras which raised over $1 million. I was contracted as a product design consultant to assist with the design and prototyping of their alpha units for Kickstarter fulfillment. I continued to support future revisions to their productions models.</p>
 
-            <p>In 2014 Immedia Semiconductor successfully ran a Kickstarter campaign for their proprietary low-powered smart security cameras which raised over $1 million. I was contracted as a product design consultant to assist with the design and prototyping of their alpha units for Kickstarter fulfillment. I continued to support future revisions to their productions models.</p>
+                <p>Throughout the project I was responsibe for:</p>
+                <ul>
+                    <li>Holding regular design meetings with various teams to review technical design and user needs</li>
+                    <li>Designing and refining Sync module components for form and mechanical assembly</li>
+                    <li>3D printing numerous prototypes for an iterative design process</li>
+                </ul>
 
-            <p>Throughout the project I was responsibe for:</p>
-            <ul>
-                <li>Holding regular design meetings with various teams to review technical design and user needs</li>
-                <li>Designing and refining Sync module components for form and mechanical assembly</li>
-                <li>3D printing numerous prototypes for an iterative design process</li>
-            </ul>
+                <p>In late 2017 the popularity and commercialization of their cameras led to a $90 million acquisition of the company by Amazon.</p>
 
-            <p>In late 2017 the popularity and commercialization of their cameras led to a $90 million acquisition of the company by Amazon.</p>
+                <p>About the Company:<br>Immedia Semiconductor  is a leading provider of video and image processing chips for connected camera  applications. Immedia's breakthrough low power solutions with 3D  noise processing and noDRAM™ technologies enable consumer cameras with unprecedented image quality, battery life, price points and form factors. Immedia  is also the company behind Blink, the ultra-affordable smart HD home monitoring  and alert system.</p>
 
-            <p>About the Company:<br>Immedia Semiconductor  is a leading provider of video and image processing chips for connected camera  applications. Immedia's breakthrough low power solutions with 3D  noise processing and noDRAM™ technologies enable consumer cameras with unprecedented image quality, battery life, price points and form factors. Immedia  is also the company behind Blink, the ultra-affordable smart HD home monitoring  and alert system.</p>
+                <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
+                    <img style="width:300px" src="images/blink_render.png">
+                    Render of Blink Camera Alpha Unit
+                </div>
 
-            <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
-                <img style="width:300px" src="images/blink_render.png">
-                Render of Blink Camera Alpha Unit
-            </div>
+                <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
+                    <img style="width:300px" src="images/blink_prototype1.png">
+                    <img style="width:300px" src="images/blink_prototype2.png">
+                    3D Printed Porototypes for Sync and Blink Modules
+                </div>
 
-            <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
-                <img style="width:300px" src="images/blink_prototype1.png">
-                <img style="width:300px" src="images/blink_prototype2.png">
-                3D Printed Porototypes for Sync and Blink Modules
+                <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
+                    <img style="width:300px" src="images/Blink_Sync_Module.png">
+                    Production Blink and Sync Modules
+                </div>
             </div>
             
         </div>
@@ -101,15 +113,16 @@
         </label>
 
         <div class="designcontent">
-            <div class="logobox">
-                <img src="images/fren_logo_BU.png">
-                <img src="images/fren_logo_BMC.png">
+            <div style="float:right">
+                <div class="logobox">
+                    <img src="images/fren_logo_BU.png">
+                    <img src="images/fren_logo_BMC.png">
+                </div>
             </div>
 
-
-
-
-            <p>During a series of observations at Boston Medical Center teams were tasked with identifying a procedure or device that caused inefficiencies or prone to failure during surgeries. Our team decided to focus on improving the efficiency of the frenotomy procedure for neonates that are tongue-tied. The current standard uses a tongue elevator, hemostat, and surgical scissors to incise the frenulum, which requires an experienced practitioner to perform due to the sensitive anatomy of a neonate. Our goal was to create a device that combines the traditional tools for this procedure, is low risk to the infants, and requires minimal training for the operator.</p>
+            <div>
+                <p>During a series of observations at Boston Medical Center teams were tasked with identifying a procedure or device that caused inefficiencies or prone to failure during surgeries. Our team decided to focus on improving the efficiency of the frenotomy procedure for neonates that are tongue-tied. The current standard uses a tongue elevator, hemostat, and surgical scissors to incise the frenulum, which requires an experienced practitioner to perform due to the sensitive anatomy of a neonate. Our goal was to create a device that combines the traditional tools for this procedure, is low risk to the infants, and requires minimal training for the operator.</p>
+            </div>
         </div>
     </div>
 
@@ -124,8 +137,11 @@
             <div class="logobox">
                 <img src="images/radmap_logo_CSA.png">
             </div>
-    
-            <p>CSA Medical specializes in cryoablation of internal tissue with liquid nitrogen (LN2). I was solely tasked with the ambitious project of creating a number of test fixtures that contained a 3-dimensional array of 400 temperature measurement points embedded in a tissue-mimicking material. The fixture was then used to find the amount of tissue treated during procedures by controlling for a variety of parameters. This device was used to shape many of company’s product design decisions. The work performed on this project led to an authorship on a pending patent.</p>
+            
+
+            <div>
+                <p>CSA Medical specializes in cryoablation of internal tissue with liquid nitrogen (LN2). I was solely tasked with the ambitious project of creating a number of test fixtures that contained a 3-dimensional array of 400 temperature measurement points embedded in a tissue-mimicking material. The fixture was then used to find the amount of tissue treated during procedures by controlling for a variety of parameters. This device was used to shape many of company’s product design decisions. The work performed on this project led to an authorship on a pending patent.</p>
+            </div>
         </div>
     </div>
 
@@ -142,11 +158,21 @@
                 <img src="images/case_logo_parallella.png">
             </div>
 
-            <p>XXXXX</p>
 
-            <p>About the Company:<br>Adapteva, Inc. is a privately held semiconductor technology company based in Lexington, Massachusetts, founded in 2008. Adapteva has developed the world's most energy efficient multicore microprocessor architecture, immediately boosting by an order of magnitude the number of cores that can be integrated on a single chip. Adapteva's breakthrough architecture will have an immediate impact in a wide range of end user products from compact mobile devices to next generation supercomputers.</p>
+            <div>
+                <p>XXXXX</p>
 
-            <p>Adapteva’s groundbreaking Epiphany multicore architecture represents a new class of massively parallel computer architectures that is the future of computing and will disrupt a wide range of end markets from compact low power devices to next generation supercomputers. To enable parallel programming in heterogeneous environments, Adapteva is adopting an open source approach making the architecture, interface and programming information available to all.</p>
+                <p>About the Company:<br>Adapteva, Inc. is a privately held semiconductor technology company based in Lexington, Massachusetts, founded in 2008. Adapteva has developed the world's most energy efficient multicore microprocessor architecture, immediately boosting by an order of magnitude the number of cores that can be integrated on a single chip. Adapteva's breakthrough architecture will have an immediate impact in a wide range of end user products from compact mobile devices to next generation supercomputers.</p>
+
+                <p>Adapteva’s groundbreaking Epiphany multicore architecture represents a new class of massively parallel computer architectures that is the future of computing and will disrupt a wide range of end markets from compact low power devices to next generation supercomputers. To enable parallel programming in heterogeneous environments, Adapteva is adopting an open source approach making the architecture, interface and programming information available to all.</p>
+
+
+                <div class="caption" style="width:250px;position:relative;display:block;top:200;right:0px">
+                    <img style="width:300px" src="images/case_thermal.jpg">
+                    Thermal Image of Parallella CPU Heating
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -163,15 +189,19 @@
                 <img src="images/blink_logo_kickstarter.png">
             </div>
 
-            <p>Partnered with two friends, I was charged with designing and prototyping a bike mountable phone case with a built-in light reflector to amplify a phone’s flash LED. The goal of this project was to create a phone case that could replace standard bike lights. </p>
-            <p>Throughout the design process I was responsible for:</p>
-            <ul>
-                <li>Determining optimal reflector shape</li>
-                <li>Designing cases for multiple phone models</li>
-                <li>Creating a design focused on low-cost injection modling tooling</li>
-                <li>3D printing prototypes to test for fit and durability</li>
-            </ul>
-            <p>Several design iterations were completed until we had a design that performed well in field tests. Higher quality 3D prints were made and I obtained several quotes from machine shops for the costs of tooling and injection molding runs. A Kickstarter campaign was launched to try to raise enough funds for manufacturing. Although the design was well-received it did not make the funding goal in time, which we determined was due to the product being advertised as a flashlight rather than a phone mount. Despite this, this was a good experience for project management and marketing, and it served to strengthen my product design skills.</p>
+
+            <div>
+
+                <p>Partnered with two friends, I was charged with designing and prototyping a bike mountable phone case with a built-in light reflector to amplify a phone’s flash LED. The goal of this project was to create a phone case that could replace standard bike lights. </p>
+                <p>Throughout the design process I was responsible for:</p>
+                <ul>
+                    <li>Determining optimal reflector shape</li>
+                    <li>Designing cases for multiple phone models</li>
+                    <li>Creating a design focused on low-cost injection modling tooling</li>
+                    <li>3D printing prototypes to test for fit and durability</li>
+                </ul>
+                <p>Several design iterations were completed until we had a design that performed well in field tests. Higher quality 3D prints were made and I obtained several quotes from machine shops for the costs of tooling and injection molding runs. A Kickstarter campaign was launched to try to raise enough funds for manufacturing. Although the design was well-received it did not make the funding goal in time, which we determined was due to the product being advertised as a flashlight rather than a phone mount. Despite this, this was a good experience for project management and marketing, and it served to strengthen my product design skills.</p>
+            </div>
         </div>
     </div>
 </div>
