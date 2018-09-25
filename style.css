@@ -43,6 +43,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: 8px 16px;
 }
 
+
 /* Title bar
 -------------------------------------------------- */
 .topbar{
@@ -120,7 +121,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .dark:hover ~ .titlebg{
-  background-color:rgb(88, 88, 88);
+  background-color:dimgray;
   transition: all .3s ease-in-out 0s;
 }
 
@@ -129,21 +130,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   transition:color 0.3s;
 }
 
-
-
 .toggledisplay{
   display:none
 }
 
 .toggledisplay:target{
   display:block
-}
-
-.ansd{
-  display:block;
-  position:relative;
-  top:-150px;
-  visibility:hidden;
 }
 
 #projects:before{
@@ -179,6 +171,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   height:150px;
   margin:0px;
   position:fixed;
+  display:block;
 }
 
 .designradio:focus,
@@ -191,12 +184,17 @@ input[type=radio]:checked + label{
   opacity:1;
 }
 
+.designradio img{
+  max-width:150px;
+}
+
 .designcontent{
   position:absolute;
   text-align:justify;
   margin-left:200px;
   visibility:hidden;
   opacity:0;
+  top:200px;
   -webkit-transition:visibility 0s, opacity 0.3s;
   transition:visibility 0s, opacity 0.3s;
 }
@@ -235,22 +233,12 @@ input[type=radio]:checked ~ .designcontent{
   padding-left:200px;
   left:50%;
   width:auto;
-  transform:translateX(-50%)
+  transform:translateX(-50%);
 }
 
 .headerimg img{
   height:250px;
   text-align:center;
-}
-
-#headeri{
-  background-image: url("images/blink_sync_production.png");
-  width:100%;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
-  background-position-y:125px;
-  background-position-x:center;
-  background-size: auto 300px;
 }
 
 .designheader:before{
@@ -297,6 +285,10 @@ input[type=radio]:checked ~ .designcontent{
   font-size:85%;
   text-align:center;
   color:darkgray;
+}
+
+#companyprofile{
+  color:dimgray;
 }
 
 
