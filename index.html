@@ -10,9 +10,9 @@
 
 <!--Navigation Bar-->
 
-<div class="topbar padding-med">
-    <a class="uline titlebar margin-med" href="#about">About Me</a>
-    <a class="uline titlebar margin-med" href="#projects">Projects</a>
+<div class="topbar">
+    <a class="uline titlebar" href="#about">About Me</a>
+    <a class="uline titlebar" href="#projects">Projects</a>
     <!--a class="uline titlebar dark margin-med" href="#photography">Photography</a-->
     <!--a class="uline titlebar margin-med" href="#personal">Personal</a-->
     <!--div class="titlebg"></div-->
@@ -20,22 +20,22 @@
 
 
 <div class="container" style="top:100px">
+
     <!--About Me Page-->
     <div class="toggledisplay" id="about">
         <div class="row">
-            <div class="three columns">
+            <div class="three columns" style="text-align:center;">
                 <img style="width:150px" src="images/Portrait.jpg">
-                <div class="row" id="icons">
-                    <a class="margin-sml" href="https://www.linkedin.com/in/alexander-paloranta-78798033/">
+                <div id="icons">
+                    <a href="https://www.linkedin.com/in/alexander-paloranta-78798033/" target="_blank">
                         <img style="width:40px" src="images/icon_linkedin.png">
                     </a>
-                    <a class="margin-sml" href="mailto:alex@palo.design">
+                    <a href="mailto:alex@palo.design">
                         <img style="width:40px" src="images/icon_email.png">
                     </a>
-                    <a class="margin-sml" href="https://www.instagram.com/_a__p_/">
-                        <img style="width:40px" src="images/icon_instagram.png">
+                    <a href="https://www.instagram.com/_a__p_/">
+                        <img style="width:40px" src="images/icon_instagram.png" target="_blank">
                     </a>
-                    
                 </div>
             </div>
             <div class="nine columns">
@@ -48,12 +48,11 @@
     </div>
 
 
-
     <!--Projects Page-->
     <div class="toggledisplay" id="projects">
         <!--Blink Module-->
         <div class="row">
-            <input style="display:none" type="radio" id="radioblink" name="radio">
+            <input style="display:none" type="radio" id="radioblink" name="radio" checked>
             <label for="radioblink" class="designradio">
                 <img src="images/Blink_Sync_Module.png">
             </label>
@@ -83,8 +82,6 @@
                                 <p>3D Printed Porototypes for Sync and Blink Modules</p>
                             </div>
                         </div>
-
-
 
                         <p>In 2014 Immedia Semiconductor successfully ran a Kickstarter campaign for their proprietary low-powered smart security cameras which raised over $1 million. I was contracted as a product design consultant to assist with the design and prototyping of their Sync Module alpha units for Kickstarter fulfillment, which served as a WiFi-enabled hub for their Blink Camera Modules. After the primary design work was completed I continued to support future design changes for the production models of their Sync and Blink Modules.</p>
 
@@ -124,10 +121,12 @@
         <div class="row">
             <input class="designradio" style="display:none" type="radio" id="radiofren" name="radio">
             <label for="radiofren" class="designradio" style="top:250px">
-                <img src="images/fren_render.png">
+                <a href="#fren">
+                    <img src="images/fren_render.png">
+                </a>
             </label>
 
-            <div class="designcontent">
+            <div class="designcontent" id="fren">
                 <div class="headerimg">
                     <img src="images/fren_render_trim.png">
                 </div>
