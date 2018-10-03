@@ -124,12 +124,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   display:block;
 }*/
 
+/*when NOT the first class is targeted, definitely hide the first class
+
+when any class is NOT targeted, display first class*/
+
+
 .toggledisplay{
   display:none;
 }
 
 .toggledisplay:target{
   display:block;
+}
+
+.toggledisplay:not(:first-child) #about{
+  display:none
 }
 
 
