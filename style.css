@@ -120,15 +120,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   transition:color 0.3s;
 }
 
-/*#about{
-  display:block;
-}*/
-
-/*when NOT the first class is targeted, definitely hide the first class
-
-when any class is NOT targeted, display first class*/
-
-
 .toggledisplay{
   display:none;
 }
@@ -162,6 +153,10 @@ when any class is NOT targeted, display first class*/
 
 
 /*Design*/
+input[name="radio-design"] {
+  display:none;
+}
+
 .designradio{
   background-color:transparent;
   opacity:0.4;
@@ -170,8 +165,9 @@ when any class is NOT targeted, display first class*/
   width:150px;
   height:150px;
   margin:0px;
-  position:fixed;
+  position:relative;
   display:block;
+  margin: 16px 16px;
 }
 
 .designradio:focus,
@@ -185,18 +181,19 @@ input[type=radio]:checked + label{
 }
 
 .designradio img{
-  max-width:150px;
+  max-width:100%;
 }
 
 .designcontent{
   position:absolute;
   text-align:justify;
-  margin-left:200px;
   display:none;
+  /*margin-left:200px;
+
   opacity:0;
   top:200px;
   -webkit-transition:visibility 0s, opacity 0.3s;
-  transition:visibility 0s, opacity 0.3s;
+  transition:visibility 0s, opacity 0.3s;*/
   padding-bottom:200px;
 }
 
@@ -231,7 +228,6 @@ input[type=radio]:checked ~ .designcontent{
   height:400px;
   position:relative;
   text-align:center;
-  
 }
 
 .headerimg{
@@ -580,9 +576,6 @@ legend {
 fieldset {
   padding: 0;
   border-width: 0; }
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline; }
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;

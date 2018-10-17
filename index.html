@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="container" style="top:100px">
+<div class="container" style="top:100px"> <!--Main content div for all sections-->
 
     <!--About Me Page-->
     <div class="toggledisplay" id="about">
@@ -50,80 +50,96 @@
 
     <!--Projects Page-->
     <div class="toggledisplay" id="projects">
-        <!--Blink Module-->
-        <div class="row">
-            <input style="display:none" type="radio" id="radioblink" name="radio" checked>
-            <label for="radioblink" class="designradio">
+
+        <div class="three columns"> <!--Navigation Bar Div-->
+            <input type="radio" id="radio-blink" name="radio-design" onclick="designdisplay();" checked>
+            <label for="radio-blink" class="designradio">
                 <img src="images/Blink_Sync_Module.png">
             </label>
 
-            <div class="designcontent">
+            <input type="radio" id="radio-fren" name="radio-design" onclick="designdisplay();">
+            <label for="radio-fren" class="designradio">
+                <img src="images/fren_render.png">
+            </label>
+
+            <input type="radio" id="radio-radmap" name="radio-design" onclick="designdisplay();">
+            <label for="radio-radmap" class="designradio">
+                <img src="images/radmap_render.png">
+            </label>
+
+            <input type="radio" id="radio-case" name="radio-design" onclick="designdisplay();">
+            <label for="radio-case" class="designradio">
+                <img src="images/case_render1.png">
+            </label>
+
+            <input type="radio" id="radio-bike" name="radio-design" onclick="designdisplay();">
+            <label for="radio-bike" class="designradio">
+                <img src="images/bikelops_render.png">
+            </label>
+        </div>
+
+        <div class="nine columns"> <!--Design Content Div-->
+            <!--Blink Module-->
+            <div class="designcontent" id="content-blink" style="display:block"> <!--Initialize display--> 
+                <div class="headerimg">
+                    <img src="images/blink_sync_production.png">
+                </div>
+
+                <div class="designheader">
+                    <h1 class="designtitle">Blink Project</h1>
+                </div>
+                
                 <div>
-                    <div class="headerimg">
-                        <img src="images/blink_sync_production.png">
+                    <div class="contentbox">
+                        <div class="logobox">
+                            <img src="images/blink_logo_immedia.png">
+                            <img src="images/blink_logo_kickstarter.png">
+                            <img src="images/blink_logo_amazon.png">
+                        </div>
+
+                        <div class="fig">
+                            <img src="images/blink_prototype1.png">
+                            <img src="images/blink_prototype2.png">
+                            <p>3D Printed Porototypes for Sync and Blink Modules</p>
+                        </div>
                     </div>
 
-                    <div class="designheader">
-                        <h1 class="designtitle">Blink Project</h1>
-                    </div>
+                    <p>In 2014 Immedia Semiconductor successfully ran a Kickstarter campaign for their proprietary low-powered smart security cameras which raised over $1 million. I was contracted as a product design consultant to assist with the design and prototyping of their Sync Module alpha units for Kickstarter fulfillment, which served as a WiFi-enabled hub for their Blink Camera Modules. After the primary design work was completed I continued to support future design changes for the production models of their Sync and Blink Modules.</p>
+
+                    Throughout the project I was responsible for:
+                    <ul>
+                        <li>Holding regular design meetings with various teams to review technical design and user needs</li>
+                        <li>Iteratively designing Sync Module components for form and mechanical assembly</li>
+                        <li>3D printing numerous prototypes for an iterative design process</li>
+                    </ul>
+
+                    <p>In late 2017 the popularity and commercialization of their cameras led to a $90 million acquisition of the company by Amazon.</p>
+
+
+
+                    <p id="companyprofile">About the Company:<br>Immedia Semiconductor is a leading provider of video and image processing chips for connected camera applications. Immedia's breakthrough low power solutions with 3D noise processing and noDRAM™ technologies enable consumer cameras with unprecedented image quality, battery life, price points and form factors. Immedia is also the company behind Blink, the ultra-affordable smart HD home monitoring and alert system.</p>
                     
-                    <div>
-                        <div class="contentbox">
-                            <div class="logobox">
-                                <img src="images/blink_logo_immedia.png">
-                                <img src="images/blink_logo_kickstarter.png">
-                                <img src="images/blink_logo_amazon.png">
-                            </div>
+                    <div class="centereddiv">
 
-                            <div class="fig">
-                                <img src="images/blink_prototype1.png">
-                                <img src="images/blink_prototype2.png">
-                                <p>3D Printed Porototypes for Sync and Blink Modules</p>
-                            </div>
+                        <div class="fig">
+                            <img src="images/blink_sync_render2.png">
+                            <p>Render of Blink Camera Alpha Unit</p>
                         </div>
 
-                        <p>In 2014 Immedia Semiconductor successfully ran a Kickstarter campaign for their proprietary low-powered smart security cameras which raised over $1 million. I was contracted as a product design consultant to assist with the design and prototyping of their Sync Module alpha units for Kickstarter fulfillment, which served as a WiFi-enabled hub for their Blink Camera Modules. After the primary design work was completed I continued to support future design changes for the production models of their Sync and Blink Modules.</p>
-
-                        Throughout the project I was responsible for:
-                        <ul>
-                            <li>Holding regular design meetings with various teams to review technical design and user needs</li>
-                            <li>Iteratively designing Sync Module components for form and mechanical assembly</li>
-                            <li>3D printing numerous prototypes for an iterative design process</li>
-                        </ul>
-
-                        <p>In late 2017 the popularity and commercialization of their cameras led to a $90 million acquisition of the company by Amazon.</p>
-
-
-
-                        <p id="companyprofile">About the Company:<br>Immedia Semiconductor is a leading provider of video and image processing chips for connected camera applications. Immedia's breakthrough low power solutions with 3D noise processing and noDRAM™ technologies enable consumer cameras with unprecedented image quality, battery life, price points and form factors. Immedia is also the company behind Blink, the ultra-affordable smart HD home monitoring and alert system.</p>
-                      
-                        <div class="centereddiv">
-
-                            <div class="fig">
-                                <img src="images/blink_sync_render2.png">
-                                <p>Render of Blink Camera Alpha Unit</p>
-                            </div>
-
-                            <div class="fig">
-                                <img src="images/blink_sync_render.png">
-                                <p>Render of Sync Module Alpha Unit Prototype</p>
-                            </div>
-
+                        <div class="fig">
+                            <img src="images/blink_sync_render.png">
+                            <p>Render of Sync Module Alpha Unit Prototype</p>
                         </div>
+
                     </div>
                 </div>
             </div>
             
-        </div>
+
 
         <!--Frenotomy Tool-->
-        <div class="row">
-            <input class="designradio" style="display:none" type="radio" id="radiofren" name="radio">
-            <label for="radiofren" class="designradio" style="top:250px">
-                <img src="images/fren_render.png">
-            </label>
 
-            <div class="designcontent">
+            <div class="designcontent" id="content-fren">
                 <div class="headerimg">
                     <img src="images/fren_render_trim.png">
                 </div>
@@ -189,16 +205,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <!--RadMap-->
-        <div class="row">
-            <input style="display:none" type="radio" id="radioradmap" name="radio">
-            <label for="radioradmap" class="designradio"style="top:400px">
-                <img src="images/radmap_render.png">
-            </label>
 
-            <div class="designcontent">
+            <div class="designcontent" id="content-radmap">
                 <div class="headerimg">
                     <img src="images/radmap_render_trim.png">
                 </div>
@@ -245,16 +256,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <!--Parallella-->
-        <div class="row">
-            <input style="display:none" type="radio" id="radiocase" name="radio">
-            <label for="radiocase" class="designradio"style="top:550px">
-                <img src="images/case_render1.png">
-            </label>
 
-            <div class="designcontent">
+            <div class="designcontent" id="content-case">
                 <div class="headerimg">
                     <img src="images/case_render1_trim.png">
                 </div>
@@ -296,16 +302,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <!--Bikelops-->
-        <div class="row">
-            <input style="display:none" type="radio" id="radiobikelops" name="radio">
-            <label for="radiobikelops" class="designradio" style="top:700px">
-                <img src="images/bikelops_render.png">
-            </label>
 
-            <div class="designcontent">
+            <div class="designcontent" id="content-bike">
                 <div class="headerimg">
                     <img src="images/bikelops_render_trim.png">
                 </div>
@@ -374,6 +375,20 @@
     </div>
 </div>
 
+<script type="text/javascript">
+
+    function designdisplay() {
+        var radios = ["radio-blink", "radio-fren", "radio-radmap", "radio-case", "radio-bike"];
+        var content = ["content-blink", "content-fren", "content-radmap", "content-case", "content-bike"];
+        for (i = 0; i < radios.length; i++){
+            rad = document.getElementById(radios[i]);
+            con = document.getElementById(content[i]);
+            if (rad.checked){con.style.display = "block";}
+            else {con.style.display = "none";}
+        }
+    }
+
+</script>
 
 </body>
 
