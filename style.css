@@ -153,6 +153,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 /*Design*/
+.container-projects{
+  display:flex;
+  flex-direction:row;
+}
+
 input[name="radio-design"] {
   display:none;
 }
@@ -334,7 +339,9 @@ input[type=radio]:checked ~ .designcontent{
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
+
 .column,
 .columns {
   width: 100%;
